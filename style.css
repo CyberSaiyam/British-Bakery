@@ -248,10 +248,19 @@ p {
   align-items: center;
 }
 
-.team .teambox {
+.team .content {
   position: relative;
   text-align: center;
   width: 100%;
+}
+
+.team .teambox {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .members {
   position: relative;
@@ -263,18 +272,21 @@ p {
   margin-bottom: 20px;
 }
 .team .teambox .members {
-  margin: 5 px auto;
+  margin: 15 px auto;
   background: white;
+  max-width: fit-content;
   padding: 20px;
   box-shadow: 0 15px 30px rgb(0, 0, 0, 0.05);
 }
 
 .team .members .imagebox {
+  margin: 0 auto;
   align-items: center;
   margin-top: 20px;
+  width: 100%;
 }
 
-.team .members .imagebox img {
+.team .members .teambox .imagebox img {
   max-width: 100%;
   margin-bottom: 15px;
 }
